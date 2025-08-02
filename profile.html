@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ user.name }}'s Profile</h2>
+<p>Email: {{ user.email }}</p>
+<h4>Posts:</h4>
+{% for post in posts %}
+<div class="card mb-2">
+    <div class="card-body">
+        {{ post.content }}
+        <br><small>{{ post.timestamp }}</small>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

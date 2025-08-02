@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Home Feed</h2>
+{% for post in posts %}
+<div class="card mb-3">
+  <div class="card-body">
+    <p>{{ post.content }}</p>
+    <small>By <a href="{{ url_for('profile', user_id=post.user_id) }}">User #{{ post.user_id }}</a> on {{ post.timestamp }}</small>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

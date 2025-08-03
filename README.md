@@ -18,7 +18,7 @@ A simple mini LinkedIn-like platform built using Flask and SQLite.
 ```bash
 git clone <repo>
 cd mini_linkedin
-pip install -r r/Users/niteshdubey/Downloads/mini_linkedin 3/README.mdequirements.txt
+pip install -r r/Users/palla/Downloads/mini_linkedin 3/README.mdequirements.txt
 python3 entry_point.py
 ```
 
